@@ -1,0 +1,9 @@
+{
+    "products": [
+        { "select": false, "sku": "BK000123", "title": "React js for dummies", "price": "22$", "param": "0.5kg", "id": "1"},
+        { "select": false, "sku": "DSK12305", "title": "Believe in yourself! (DVD edition)", "price": "2", "param": "256MB", "id": "2"}, 
+        { "select": false, "sku": "FRNTR457", "title": "Boss chair", "price": "150", "param": ["H: 150, W: 80, L:60"], "id": "3"},
+        { "select": false, "sku": "DSK45687", "title": " Daft Punk - Homework", "price": "9", "param": "480MB", "id": "4"},
+        { "select": false, "sku": "TBL84385", "title": " Boss table", "price": "200", "param": ["H: 90, W: 210, L: 75"], "id": "5"}
+    ]
+}

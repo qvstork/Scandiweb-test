@@ -22,15 +22,15 @@ function AddProduct() {
         <div className='product-info-inputs'>
           <div id='sku'>
             <label>SKU</label> 
-            <input placeholder='SKU'></input>
+            <input type="text" placeholder='SKU' />
           </div>
           <div id='name'>
             <label>Name</label>
-            <input placeholder='Name'></input>
+            <input type="text" placeholder='Name' />
           </div>
           <div id='price'>
             <label>Price</label>
-            <input placeholder='Price'></input>
+            <input type="number" placeholder='Price' />
           </div>  
           <ProductTypeSwitchForm />
         </div>

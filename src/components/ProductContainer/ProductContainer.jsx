@@ -1,25 +1,25 @@
 import React from 'react'
+import { useState } from 'react';
 import './ProductContainer.css'
 
 
-class ProductContainer extends React.Component {
-  state = { 
-    id: 1
-  }    
-
-  render() { 
-        return  <div className="container">
-                    <input type="checkbox" className='delete-checkbox'></input>
-                  <div className='productHeader'>
-                    <h2>Name</h2>
-                    <h3>Model</h3>
-                    <h3>Price</h3>
-                    <h3>Size</h3>
-                  </div>
-                </div>
-   
+const ProductContainer = ( { products, setProducts, deleteProductsByIds,
+  sku, title, price, param, id } ) =>  {
+  
+        return (
+        <div className="container">
+           <input type="checkbox" 
+            className='delete-checkbox' onChange={deleteProductsByIds} />
+          <div className='productPreview' key={ id }>
+            <h2> { sku }</h2>
+            <h3>{ title }</h3>
+            <h3>{ price }$</h3>
+            <h4>{ param }</h4>
+          </div>
+        </div>
+        );
     }
-}
+
 
 
 export default ProductContainer;
